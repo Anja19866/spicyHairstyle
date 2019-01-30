@@ -1,0 +1,4 @@
+prototype(Gabi.Site:GabiPreiseMobil) < prototype(Neos.Neos:Content) {
+    gabiPreiseMobil1 = ${q(node).property('gabiPreiseMobil1')}
+    gabiPreiseMobil2 = ${q(node).property('gabiPreiseMobil2')}
+}

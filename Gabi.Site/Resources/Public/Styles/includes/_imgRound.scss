@@ -1,0 +1,26 @@
+.imgRound-item {
+  display: inline-block;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.img-responsive {
+  border: 1px solid cornsilk;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 760px) {
+  .imgRound-item {
+    margin: 0 3em;
+  }
+}
+
+@media only screen and (max-width: 759px) {
+  .imgRound-item {
+    margin: 0 4em;
+  }
+
+  .img-responsive {
+    width: 202px;
+  }
+}

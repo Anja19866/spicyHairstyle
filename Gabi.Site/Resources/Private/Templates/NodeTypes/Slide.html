@@ -1,0 +1,29 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+
+<f:section name="Content">
+    <div {attributes->f:format.raw()}>
+        <f:if condition="{image}">
+            <f:then>
+            <div>
+                <img src="{image}" class="img-fluid" alt="">
+            </div>
+            </f:then>
+            <f:else>
+                <img src="https://via.placeholder.com/250x250"
+                     class="img-responsive" alt="">
+            </f:else>
+        </f:if>
+        <div class="carousel-caption">
+           <f:if condition="{hasCaption}">
+               {neos:contentElement.editable(property: 'caption')}
+           </f:if>
+        </div>
+        <!--<div class="link">-->
+            <!--<a href="{node.properties.link}" class="btn btn-secondary">-->
+                <!--{node.properties.linkLabel}-->
+            <!--</a>-->
+        <!--</div>-->
+    </div>
+</f:section>
+
+

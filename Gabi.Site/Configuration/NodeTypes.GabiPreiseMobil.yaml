@@ -1,0 +1,33 @@
+'Gabi.Site:GabiPreiseMobil':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Gabi-Preise-Mobil
+    icon: icon-hand-holding-usd
+    group: gabi
+    inlineEditable: true
+    inspector:
+      groups:
+        gabisettings:
+          label: 'Gabi Einstellungen'
+  properties:
+    gabiPreiseMobil1:
+      type: string
+      ui:
+        label: Text1
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Hier kommt der 1. Text'
+          inspector:
+            group: gabi
+    gabiPreiseMobil2:
+      type: string
+      ui:
+        label: Text2
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Hier kommt der 2. Text'
+          inspector:
+            group: gabi

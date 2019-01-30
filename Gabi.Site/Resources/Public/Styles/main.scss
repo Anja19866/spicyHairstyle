@@ -1,0 +1,84 @@
+@import 'includes/_contact.scss';
+@import 'includes/_gabiPreiseMobil.scss';
+@import 'includes/_header.scss';
+@import 'includes/_imgRound.scss';
+@import 'includes/_menu.scss';
+@import 'includes/_slider.scss';
+
+// Farbe spicy: #3a3535
+
+body {
+  background-image: url("../Images/background.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  color: #3a3535;
+  font-family: 'Courgette', cursive;
+  margin: 0 auto;
+  position: relative;
+  overflow-x : hidden;
+}
+
+.column {
+  margin: 1em;
+}
+
+.column, .neos-nodetypes-text {
+  display: inline-block;
+}
+
+figure img {
+  height: 20%;
+  width: 20%;
+}
+
+h1{
+  text-align: center;
+}
+
+.neos-nodetypes-headline {
+  margin-top: 25px;
+}
+
+.neos-nodetypes-text, .neos-nodetypes-textwithimage {
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: 'Courgette', cursive;
+  font-size: 110%;
+  border-radius: 3px;
+}
+
+.wrapper {
+  background-color: rgba(255, 255,  255, 0.7);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1626px) and (max-width: 1869px){
+
+  .nav-wrapper-mobil {
+    display: none;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    right: 10%;
+    top: 50px;
+    z-index: 2000;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1499px){
+
+  .wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .neos-nodetypes-text {
+    font-size: 90%;
+  }
+}

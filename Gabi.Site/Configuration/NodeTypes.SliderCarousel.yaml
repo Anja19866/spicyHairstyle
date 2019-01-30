@@ -1,0 +1,36 @@
+'Gabi.Site:SliderCarousel':
+  superTypes:
+    'Neos.Neos:Content': true
+  childNodes:
+    content:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'Gabi.Site:Slide': true
+          '*': false
+  ui:
+    label: 'SliderCarousel'
+    icon: 'icon-square'
+    group: gabi
+#    inlineEditable: true
+    inspector:
+      groups:
+        gabisettings:
+          label: 'SliderCarousel'
+#  properties:
+#    numTilesExtraLarge:
+#      type: int
+#      defaultValue: 4
+#      ui:
+#        label: 'Anzahl der Slides bei grossen PC-Bildschirmen'
+#        reloadIfChanged: true
+#        inspector:
+#          group: gabisettings
+#    numTilesLarge:
+#      type: int
+#      defaultValue: 3
+#      ui:
+#        label: 'Anzahl der Slides bei PC-Bildschirmen'
+#        reloadIfChanged: true
+#        inspector:
+#          group: gabisettings

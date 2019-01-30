@@ -1,0 +1,176 @@
+.menu a {
+  color: cornsilk;
+  cursor: pointer;
+  padding: 0 0.25em;
+}
+
+.menu a:hover, .menu a:active, .menu a:focus, .current {
+  color: crimson;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1870px) {
+
+  .nav-wrapper-mobil {
+    display: none;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    right: 15%;
+    top: 50px;
+    z-index: 2000;
+  }
+}
+
+@media only screen and (min-width: 1626px) and (max-width: 1869px){
+
+  .nav-wrapper-mobil {
+    display: none;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    right: 10%;
+    top: 50px;
+    z-index: 2000;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1625px){
+
+  .nav-wrapper-mobil {
+    display: none;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    right: 7%;
+    top: 50px;
+    z-index: 2000;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1499px){
+
+  .nav-wrapper-mobil {
+    display: none;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    right: 20%;
+    top: 50px;
+    z-index: 2000;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+
+  .nav-wrapper-mobil {
+    display: none;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    right: 15%;
+    top: 50px;
+    z-index: 2000;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 999px){
+
+  .nav-wrapper-mobil {
+    display: none;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    right: 10%;
+    top: 50px;
+    z-index: 2000;
+  }
+}
+
+@media only screen and (min-width: 756px) and (max-width: 819px){
+
+  .nav-wrapper-mobil {
+    display: none;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    right: 3%;
+    top: 50px;
+    z-index: 2000;
+  }
+}
+
+@media only screen and (max-width: 755px){
+
+  .nav-wrapper {
+    display: none;
+  }
+
+  .nav-wrapper-mobil {
+    position: fixed;
+    left: 2em;
+    top: 1.7em;
+    z-index: 2000;
+  }
+
+}
+
+.menu, .navi-button, .navi-button-mobil {
+  background-color: #3a3535;
+  border-radius: 100%;
+  margin: -1em;
+}
+
+.navi-button, .navi-button-mobil {
+  font-size: 2em;
+  padding: 10px 20px;
+}
+
+.menu {
+  font-size: 1.1em;
+  opacity: 0;
+  padding: 40px;
+  z-index: 1999;
+}
+
+.normal, .current {
+  text-decoration: none;
+  padding: 0 0.25em;
+}
+
+.nav-checkbox {
+  display: none;
+}
+
+.nav-checkbox:checked ~ .menu, .menu-mobil {
+  opacity: 1;
+}
+
+.nav-checkbox:checked ~ .navi-button {
+  transform: scale(0.5);
+  position: fixed;
+  right: 16%;
+  top: 80px;
+  z-index: 2020;
+}
+
+.nav-checkbox:checked ~ .navi-button-mobil {
+  transform: scale(0.5);
+  position: fixed;
+  left: 35%;
+  top: 45px;
+  z-index: 2020;
+}
+
+ul {
+  margin-left: -2em;
+  margin-bottom: -0.5em;
+  list-style: none;
+}

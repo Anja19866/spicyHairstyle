@@ -1,0 +1,9 @@
+//prototype(Gabi.Site:ImgRound) {
+//    imgRoundContent = Neos.Neos:ContentCollection {
+//        nodePath = 'imgRoundContent'
+//    }
+//}
+prototype(Gabi.Site:ImgRound) < prototype(Neos.Neos:Content) {
+    imgRoundText = ${q(node).property('imgRoundText')}
+    imgRoundImage = ${q(node).property('imgRoundImage')}
+}

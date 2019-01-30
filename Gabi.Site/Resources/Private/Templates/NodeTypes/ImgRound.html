@@ -1,0 +1,16 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<div class="col-lg-3 col-md-3 col-sm-3 col-10 imgRound-item" id="hairstyles">
+        <f:if condition="{imgRoundImage}">
+            <f:then>
+                <img src="{neos.media:uri.image(image: node.properties.imgRoundImage, maximumWidth: 250, maximumHeight: 250)}"
+                     class="img-responsive" alt="">
+            </f:then>
+            <f:else>
+                <img src="http://placehold.it/250x250"
+                     class="img-responsive" alt="">
+            </f:else>
+        </f:if>
+    <div class="imgRound-caption">
+        {neos:contentElement.editable(property: 'imgRoundText', tag: 'p', class: 'text-muted')}
+    </div>
+</div>

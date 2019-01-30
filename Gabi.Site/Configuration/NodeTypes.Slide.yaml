@@ -1,0 +1,72 @@
+'Gabi.Site:Slide':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Slide
+    icon: 'icon-image'
+    group: gabi
+    inspector:
+      groups:
+        gabisettings:
+          label: 'Slide'
+  properties:
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: Bild
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+          editorOptions:
+            features:
+              crop: true
+              resize: true
+            crop:
+              aspectRatio:
+                locked:
+                  width: 250
+                  height: 250
+#    link:
+#      type: string
+#      ui:
+#        label: 'Link'
+#        reloadIfChanged: true
+#        inspector:
+#          group: gabisettings
+#          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+#    headline:
+#      type: string
+#      ui:
+#        label: 'Überschrift'
+#        reloadIfChanged: true
+#        inspector:
+#          group: gabisettings
+#    description:
+#      type: string
+#      ui:
+#        label: 'Beschreibung'
+#        reloadIfChanged: true
+#        inspector:
+#          group: gabisettings
+#          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
+#          editorOptions:
+#            rows: 3
+#    type:
+#      type: string
+#      ui:
+#        label: 'Typ'
+#        reloadIfChanged: true
+#        inspector:
+#          group: gabisettings
+#          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+#          editorOptions:
+#            placeholder: 'Default'
+#            values:
+#              cardB:
+#                label: 'Card B'
+#    limitedHeight:
+#      type: boolean
+#      defaultValue: true
+#      ui:
+#        label: 'Limited Height'
+#        reloadIfChanged: true

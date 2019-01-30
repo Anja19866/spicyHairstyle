@@ -1,0 +1,66 @@
+@media only screen and (min-width: 1500px) {
+  .img-header {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 556px) and (max-width: 1499px) {
+
+  .phone {
+    white-space: pre;
+    margin-right: 30%;
+  }
+
+  .img-header {
+    margin: 0 1.5em;
+  }
+}
+
+
+@media only screen and (min-width: 556px) {
+
+  .header {
+    background-color: #3a3535;;
+    border-radius: 3px;
+    color: cornsilk;
+    display: inline-block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .header-mobil {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+
+  .header {
+    display: none;
+  }
+
+  .header-mobil {
+    background-color: #3a3535;
+    color: cornsilk;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .img-header-mobil {
+    margin-bottom: 1em;
+  }
+}
+
+.phone a, .fa-bars {
+  color: cornsilk;
+  text-decoration: none;
+}
+
+.phone a:hover, .phone a:focus {
+  color: crimson;
+}
+

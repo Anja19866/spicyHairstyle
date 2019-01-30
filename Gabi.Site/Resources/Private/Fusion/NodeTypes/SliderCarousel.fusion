@@ -1,0 +1,38 @@
+prototype(Gabi.Site:SliderCarousel) {
+        //    slide = Neos.Neos:ContentCollection {
+//        nodePath = 'slide'
+//        content.iterationName = 'slideIteration'
+//        attributes.class = 'carousel-inner'
+//    }
+        slides = ${q(node).find('[instanceof Gabi.Site:Slide]')}
+}
+
+//    prototype(Neos.NodeTypes:Image) {
+//        templatePath = 'resource://Gabi.Site/Private/Templates/FusionObjects/Slide.html'
+//        attributes.class = ${'item' + (slideIteration.isFirst ? 'active' : '')}
+//        iteration = ${slideIteration}
+//    }
+
+
+//
+//    vueAttributes = Neos.Fusion:Attributes {
+//        ':num-tiles-extra-large' = ${q(node).property('numTilesExtraLarge') ? q(node).property('numTilesExtraLarge') : 4}
+//        ':num-tiles-large' = ${q(node).property('numTilesLarge') ? q(node).property('numTilesLarge') : 3}
+//        ':tiles' = Neos.Fusion:RawCollection {
+//            collection = ${q(node).find('[instanceof Gabi.Site:SliderCarousel:image]')}
+//
+//            itemName = 'node'
+//            itemRenderer = Neos.Fusion:RawArray {
+//                linkUrl = ${q(node).property('link')}
+//                imageUrl = ${q(node).property('image')}
+//                headline = ${q(node).property('headline')}
+//                description = ${q(node).property('description')}
+//                type = ${q(node).property('type')}
+//                limitedHeight = ${q(node).property('limitedHeight')}
+//                hideContent = ${q(node).property('headline').length > 0 || q(node).property('description').length > 0}
+//            }
+//
+//            @process.toJSON = ${Json.stringify(value)}
+//        }
+//    }
+//}

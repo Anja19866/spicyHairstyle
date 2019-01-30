@@ -1,0 +1,13 @@
+Neos:
+  Neos:
+    nodeTypes:
+      groups:
+        general:
+          position: 1
+        structure:
+          position: 2
+        gabi:
+          label: 'Gabi'
+          position: 3
+        plugins:
+          position: 4

@@ -1,0 +1,36 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+
+<div {attributes-> f:format.raw()}>
+    <div class="carousel slide" id="{node.identifier}">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <f:for each="{slides}" as="slide" iteration="slideIterator">
+                <f:if condition="{slide.properties.image}">
+                    <li data-target="#{slide.identifier}" data-slide-to="{slideIterator.index}"
+                        class="{f:if(condition: slideIterator.isFirst, then: 'active')}"></li>
+                </f:if>
+            </f:for>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <f:for each="{slides}" as="slide" iteration="slideIterator">
+                    <f:if condition="{slide.properties.image}">
+                        <img src="{f:uri.resource(resource: slide.properties.image.resource)}" alt="image" width="250"/>
+                    </f:if>
+                </f:for>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#{node.identifier}" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#{node.identifier}" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+</div>

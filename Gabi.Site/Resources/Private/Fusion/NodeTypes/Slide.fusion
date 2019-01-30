@@ -1,0 +1,17 @@
+//prototype(Gabi.Site:Slide) {
+//    sectionName = 'Content'
+//
+////    image = Neos.Neos:ImageUri {
+////        asset = ${q(node).property('image')}
+////        width = 400
+////        height = 400
+////        allowCropping = TRUE
+////        allowUpScaling = TRUE
+////    }
+//}
+prototype(Gabi.Site:Slide) < prototype(Neos.Neos:Content) {
+    description = ${q(node).property('description')}
+//    headline = ${q(node).property('headline')}
+//    image = ${q(node).property('image')}
+
+}

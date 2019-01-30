@@ -1,0 +1,34 @@
+'Gabi.Site:ImgRound':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: ImgRound
+    icon: 'icon-file'
+    group: gabi
+    inspector:
+      groups:
+        gabisettings:
+          label: 'Gabi Einstellungen'
+  properties:
+    imgRoundText:
+      type: string
+      defaultValue: 'Style X'
+      ui:
+        label: Text
+        inlineEditable: true
+    imgRoundImage:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: ImgRound Bild
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+          editorOptions:
+            features:
+              crop: true
+              resize: true
+            crop:
+              aspectRatio:
+                locked:
+                  width: 250
+                  height: 250

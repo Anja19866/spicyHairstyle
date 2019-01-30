@@ -1,0 +1,84 @@
+'Gabi.Site:ContactForm':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Kontaktformular
+    icon: icon-envelope
+    group: gabi
+    inspector:
+      groups:
+        gabisettings:
+          label: 'Gabi Einstellungen'
+  properties:
+    contactName:
+      type: string
+      defaultValue: 'Dein Name *'
+      ui:
+        label: 'Name (Platzhalter)'
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+    contactValidationName:
+      type: string
+      defaultValue: 'Bitte Namen eingeben!'
+      ui:
+        label: 'Name (Fehlermeldung)'
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+    contactMail:
+      type: string
+      defaultValue: 'Deine E-Mail *'
+      ui:
+        label: 'E-Mail (Platzhalter)'
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+    contactValidationMail:
+      type: string
+      defaultValue: 'Bitte E-Mail eingeben!'
+      ui:
+        label: 'E-Mail (Fehlermeldung)'
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+    contactPhone:
+      type: string
+      defaultValue: 'Deine Telefonnummer *'
+      ui:
+        label: 'Telefonnummer (Platzhalter)'
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+    contactValidationPhone:
+      type: string
+      defaultValue: 'Bitte Telefonnummer eingeben!'
+      ui:
+        label: 'Telefonnummer (Fehlermeldung)'
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+    contactMessage:
+      type: string
+      defaultValue: 'Deine Nachricht *'
+      ui:
+        label: 'Nachricht (Platzhalter)'
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+    contactValidationMessage:
+      type: string
+      defaultValue: 'Bitte Nachricht eingeben!'
+      ui:
+        label: 'Nachricht (Fehlermeldung)'
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
+    contactButton:
+      type: string
+      defaultValue: 'Nachricht absenden!'
+      ui:
+        label: Button
+        reloadIfChanged: true
+        inspector:
+          group: gabisettings
